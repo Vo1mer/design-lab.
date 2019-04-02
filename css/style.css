@@ -59,7 +59,7 @@ textarea {
 	padding-right: 20px;
 }
 .heroSection{
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background: url("../images/hero.png") top right no-repeat;
 	background-size: cover;
@@ -196,8 +196,8 @@ textarea {
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
 	margin: 120px auto;
-	border: 2px solid #000000;
-	padding: 125px 170px 90px 170px;
+	border: 2px solid #3c3c3c;
+	padding: 120px 170px 90px 170px;
 	text-align: center;
 }
 .weDo__title{
@@ -206,12 +206,17 @@ textarea {
 	letter-spacing: 0.160em;
 	text-transform: uppercase;
 	background-color: #ffffff;
-	color: #000000;
+	color: #3c3c3c;
 	padding: 0 100px;
 	position: absolute;
 	top: -20px;
 	right: calc(50% - 239px);
-
+}
+.weDo__item--logo1,
+.weDo__item--logo2,
+.weDo__item--logo3{
+	margin: auto;
+	margin-bottom: 40px;
 }
 .weDo__item--logo1{
 	background: url("../images/logo_design.png") center center no-repeat;
@@ -220,11 +225,152 @@ textarea {
 }
 .weDo__item--logo2{
 	background: url("../images/logo_development.png") center center no-repeat;
-	width: 79px;
+	width: 80px;
 	height: 76px;
 }
 .weDo__item--logo3{
 	background: url("../images/logo_management.png") center center no-repeat;
-	width: 79px;
+	width: 80px;
 	height: 91px;
+}
+.weDo__item--title{
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	margin-bottom: 40px;
+}
+.weDo__item--text{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 26px;
+	color: #3c3c3c;
+	margin-bottom: 80px;
+}
+.weDo__item--text p:last-child{
+	margin-bottom: 0;
+}
+
+.sectionPlates{
+	height: 490px;
+	width: 100%;
+	margin: auto;
+}
+.platesGrid{
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr;
+	grid-template-rows: repeat(2, 240px);
+	gap: 10px;
+
+}
+.platesGrid__item1{
+	background: url("../images/plates/plate1.jpg") center center no-repeat;
+	background-size: cover;
+}
+.platesGrid__item2{
+	background: url("../images/plates/plate2.jpg") center center no-repeat;
+	background-size: cover;
+}
+.platesGrid__item3{
+	background: url("../images/plates/plate3.jpg") center center no-repeat;
+	background-size: cover;
+}
+.platesGrid__item4{
+	background: url("../images/plates/plate4.jpg") center center no-repeat;
+	background-size: cover;
+}
+.platesGrid__item5{
+	background: url("../images/plates/plate5.jpg") center center no-repeat;
+	background-size: cover;
+}
+.platesGrid__item6{
+	background: url("../images/plates/plate6.jpg") center center no-repeat;
+	background-size: cover;
+}
+.platesGrid > div{
+	position: relative;
+}
+.platesGrid > div > div{
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #ffffff;
+	position: absolute;
+	bottom: 40px;
+	left: 50px;
+}
+
+.sectionContact{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-color: #ffffff;
+}
+.contactContainer{
+	width: 900px;
+	height: 300px;
+	border: 2px solid #3c3c3c;
+	position: absolute;
+	top: 0;	right: 0; bottom: 0; left: 0;
+	margin: auto;
+	margin-bottom: 165px;
+	text-align: center;
+	padding: 75px 176px 48px 176px;
+}
+.contactTitle{
+	width: 455px;
+	font-weight: 700;
+	font-size: 30px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	padding: 0 110px;
+	background-color: #ffffff;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 227px);
+}
+.contactText{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 45px;
+}
+.contactButton{
+	width: 395px;
+	height: 60px;
+	letter-spacing: 0.160em;
+	background-color: #3c3c3c;
+	text-transform: uppercase;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contactButton a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #ffffff;
+}
+.footer{
+	display: inline-block;
+	position: absolute;
+	bottom: 65px;
+	left: calc(50% - 155px);
+	width: 350px;
+	height: 45px;
+}
+.footerLogo{
+	display: inline-block;
+	background: url("../images/icon-footer.png") center center no-repeat;
+	width: 37px;
+	height: 45px;
+	vertical-align: middle;
+	margin-right: 35px;
+}
+.footerText{
+	display: inline-block;
+	font-size: 14px;
+	color: #3c3c3c;
 }
